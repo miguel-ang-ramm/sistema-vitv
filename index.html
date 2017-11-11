@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="em">
+<head>
+	<meta charset="UTF-8">
+	<title>Formulario</title>
+	<link rel="stylesheet" href="boton.css">
+	<style>
+	    body{font-family: Arial; background-color: #18A383; box-sizing: border-box;}
+
+	    form{
+	    	background-color: white;
+	    	border-radius: 3px;
+	    	color: #999;
+	    	font-size: 0.8em;
+	    	padding: 20px;
+	    	margin: 0 auto;
+	    	width: 50%;
+
+	    }
+
+	    input, textarea{
+	    	border: 0;
+	    	outline: none;
+
+	    	width: 470px;
+	    }
+
+	    .field{
+	    	border: solid 1px #ccc;
+	    	padding: 10px;
+
+
+        }
+
+        .field:focus{
+        	border-color: #18A383;
+        }
+
+        .center-content{
+        	text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+	<form action="guardar.php" method="POST">
+		
+        <p>CARTA DE PRESENTACIÓN Y AGRADECIMIENTO RESIDENCIAS PROFESIONALES.</p>
+        <br/>
+
+		<p>INSTRUCCIÓNES: Rellena las siguientes campos con su correspondiente información.</p>
+		<br/>
+        
+        <p>1.- Anotar el nombre completo y correcto de la persona que dirige la empresa:</p>
+        <label for="nombre"></label>
+        <input type="text" class="field" name="nombre"> <br/>
+
+        
+        <p>2.- Anotar el nombre correcto del cargo que ocupa la persona que dirige la empresa:</p>
+        <label for="cargonombre"></label>
+        <input type="text" class="field" name="cargonombre"> <br/>
+
+        
+        <p>3.- Anotar el nombre correcto de la empresa:</p>
+        <label for="nombreempresa"></label>
+        <input type="text" class="field" name="nombreempresa"> <br/>
+
+        
+        <p>4.- Anotar el nombre del estudiante al que se esta presentando:</p>
+        <label for="nombreestudiante"></label>
+        <input type="text" class="field" name="nombreestudiante"> <br/>
+
+        
+        <p>5.- Anotar el numero de control del estudiante:</p>
+        <label for="numerocontrol"></label>
+        <input type="text" class="field" name="numerocontrol"> <br/>
+
+        
+        <p>6.- Anotar el nombre completo y correcto de la carrera a la que pertenece el estudiante:</p>
+        <label for="carreraestudiante"></label>
+        <input type="text" class="field" name="carreraestudiante"> <br/>
+
+        
+        <p>7.- Escribir el nombre del proyecto que desarrolla el estudiante:</p>
+        <label for="proyectoestudiante"></label>
+		<input type="text" class="field" name="proyectoestudiante"> <br/>
+
+	    <p>8.- Numero de Seguro Social:</p>
+	    <label for="numeross"></label>
+		<input type="text" class="field" name="numeross"> <br/>
+
+
+		<p class="center-content">
+			<input type="submit" class="btn btn-green" value="Enviar Datos">
+		</p>
+	</form>
+</body>
+</html>
